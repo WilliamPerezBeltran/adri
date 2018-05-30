@@ -1,0 +1,453 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x: hidden;
+	/*font-family: 'Bayon';*/
+	/*font-family: 'Fira Sans Condensed';font-size: 22px;*/
+	/*font-family: 'Content';*/
+	/*font-family: 'Tangerine', serif;*/
+	/*font-family: 'NordiquePro-Bold', helvetica, sans-serif;*/
+	font-family: 'Open Sans',sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing:antialiased !important;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+	transition:all 500ms ease-in-out;
+}
+
+a:hover,
+a:active{
+	text-decoration: none;
+}
+
+h1,
+h2
+h4{
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+p{
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+.btn{
+	transition: all 300ms ease-in-out;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+}
+.btn:hover{
+	background-color: #ededed !important;
+	color:#3c3c3c !important;
+	border:1px solid #fff !important;
+}
+
+
+/*navigation*/
+
+
+.navbar{
+	background-color: #222222 !important;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-weight: 700;
+}
+.navbar{
+	color:#fff !important;
+	opacity: 0.8;
+}
+
+.navbar a:hover{
+	opacity: 1;
+	background-color: #111111 !important;
+
+}
+
+
+/*header*/
+
+.header{
+	width: 100%;
+    min-height: 100vh;
+	padding: 30px 0 30px;
+	margin-top: 50px;
+	background-image: url('../images/corporate5.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color:#fff;
+	position: relative;
+
+
+}
+.header::before{
+	content:'';
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #e4e4e4, #e5e5e5, #e6e7e6, #e8e8e8, #e9e9e9);
+	opacity: 0.7;
+
+}
+	
+.header img{
+	height: 350px;
+	width: 450px;
+	margin:70px 0 0 40px;
+	border-radius: 50%;
+}
+
+.header h1{
+	font-family: 'Marcellus SC';
+	font-size: 10Rem;
+	font-weight: 700;
+	padding-top:30px;
+}
+.header p{
+	font-family: 'Karla';
+	color: #737373;
+	/*line-height:2em;*/
+	/*font-size: 2.4em*/
+}
+
+.header h1,
+.header p,
+.header button{
+	margin-top: 20px;
+}
+
+.header button{
+	border-radius: 0;
+	margin:40px 20px;
+}
+
+@media(max-width:768px){
+	.header{
+		margin-top:55px;
+		padding: 30px;
+		height: 750px;
+		width: 100%;
+
+	}
+
+	.header img{
+		width: 90%;
+		height: 300px;
+		margin:20px 0 0 20px;
+	}
+
+	.header .btn{
+		font-size: 10px;
+		margin-left:20px;
+	}
+
+	.header h1{
+		font-size: 20px;
+	}
+
+	.header p{
+		font-size: 10px;
+	}
+}
+/* end header*/
+
+/* Servicios*/
+.servicios{
+	width: 100%;
+	min-height: 100vh; 
+	padding: 80px 0 80px;
+	text-align: center;
+	background-image: url('../images/corporate20.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.servicios::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #e4e4e4, #dedede, #d7d7d7, #d1d1d1, #cbcbcb);
+	opacity: 0.7;
+	z-index: 1;
+}
+.servicios .container{
+	position: relative;
+	z-index: 2;
+}
+
+.servicios h2{
+	font-family: 'Marcellus SC';
+	color:black;
+	font-size: 10Rem;
+}
+.servicios h4{
+	color:white;
+	margin:20px 0 20px;
+	font-size: 2em;
+}
+
+.servicios p{
+	color:#737373;
+	font-family: 'Karla'
+	/*line-height:1em;*/
+	font-size: 2em;
+	padding-bottom: 40px;
+	text-align: justify;
+
+}
+
+.servicios i{
+	height: 100px;
+	width: 100px;
+	font-size: 40px;
+	border-radius: 50%;
+	background-color: red;
+	color:#fff;
+	line-height: 100px;
+}
+
+@media(max-width:768px){
+	.servicios{
+		padding: 30px;
+	}
+}
+/* end servicios*/
+
+
+/* team */
+.team{
+	width: 100%;
+	min-height: 100vh; 
+	padding: 50px 0 80px;
+	text-align: center;
+	background-color: #eee;
+	background-image: url('../images/corporate23.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.team::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #DFD3D3;
+	opacity: 0.7;
+	z-index: 1;
+
+}
+.team .container{
+	position: relative;
+	z-index: 2;
+}
+
+
+.team h2{
+	font-family: 'Marcellus SC';
+	font-size: 10Rem;
+}
+
+.team h4{
+	margin:20px 0 20px;
+	color:white;
+	font-family: 'Karla'
+	line-height:1em;
+	font-size: 2em;
+}
+
+.team p{
+	font-family: 'Karla'
+	/*line-height:100px;*/
+	font-size: 2em;
+	color:#737373;
+}
+
+.team img{
+	height: 200px;
+	width: 200px;
+	margin-top:80px;
+}
+
+.team i{
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	font-size: 17px;
+	border-radius: 50%;
+	background-color: #2796CB;
+	color:#fff;
+}
+
+.team a:hover{
+	background-color: #709963;
+}
+/* end team*/
+
+/* client*/
+.clients{
+	width: 100%;
+	min-height: 100vh; 
+	padding: 50px 0 80px;
+	text-align: center;
+	color:#fff;
+	background-image: url('../images/corporate24.jpg');
+	background-attachment:fixed;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.clients::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #dee0d7, #e0e7e1, #e5ecea, #edf2f2, #f5f7f8);
+	opacity: 0.8;
+	z-index: 1;
+}
+.clients .container{
+	position: relative;
+	z-index: 2;
+}
+.clients h2{
+	font-family: 'Marcellus SC';
+	font-size: 10Rem;
+	color: white;
+}
+
+.clients p{
+	padding-bottom: 40px;
+	color: #737373;
+}
+
+.clients img{
+	width: 100px;
+	height: 100px;
+	opacity: 0.6;
+	cursor:pointer;
+	margin:40px 0;
+	transition: all 500ms ease-in-out;
+
+}
+
+.clients li:hover img{
+	opacity: 1;
+
+
+}
+/* end client*/
+
+
+/* contact*/
+.contact{
+	width: 100%;
+	min-height: 100vh; 
+	padding: 50px 0 80px;
+	text-align: center;
+}
+
+.contact p{
+	padding-bottom: 80px;
+	color: #737373;
+}
+
+.contact h2{
+	text-decoration: underline;
+	font-family: 'Marcellus SC';
+	font-size: 10Rem;
+	color: #E75151;
+	margin: 20px 0 20px;
+}
+
+.contact .input-group{
+	margin-bottom: 25px;
+}
+
+.contact .form-control{
+	border-radius: 0 !important;
+}
+.contact .span{
+	border-radius: 0 !important;
+}
+
+.contact .btn{
+	border-radius: 0 !important;
+	width: 100%;
+	font-size: 15px;
+	background-color: #FF8264;
+	color: #fff;
+}
+
+.contact .btn:hover{
+	background-color: #a85959 !important;
+	color: #fff !important;
+}
+@media(max-width:768px){
+	.contact {
+	}
+	.contact textarea{
+	}
+
+}
+
+/* end contact*/
+
+
+/* footer */
+.footer{
+	min-height: 20vh; 
+	padding:30px;
+	color: #cccccc;
+	background-color: black;
+}
+.footer .social{
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: 5px;
+	border:1px solid #cccccc;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+.footer input{
+	height: 40px;
+	width: 160px;
+	border: none;
+	background-color: #cccccc;
+	color: #000;
+}
+.footer .btn{
+	padding: 10px 5px 10px;
+	margin: -3px 0 0 5px;
+}
+
+.footer p i{
+	margin-right :10px;
+}
+/* End footer */
